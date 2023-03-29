@@ -41,3 +41,10 @@ regularPosts.style.border = '5px solid black'
 
 let firstHead = document.querySelector('main > h3')
 firstHead.addEventListener('click', () => { alert('you clicked!') })
+
+firstHead.addEventListener('mouseover', () => {
+    console.log('mouse detected')
+}, { once: true })
+let button = document.querySelector('button')
+let hot = document.querySelector('#new')
+button.addEventListener('click', createPost(hot,blogPosts))
